@@ -1,0 +1,49 @@
+:root {
+    --text-sm: clamp(0.85rem, 0.9vw, 0.95rem);
+    --text-base: clamp(1.1rem, 2vw, 1.3rem);
+    --text-lg: clamp(1.4rem, 2.5vw, 1.6rem);
+    --text-xl: clamp(1.5rem, 2.5vw, 2rem);
+    --text-hero: clamp(2rem, 4vw, 3rem);
+}
+
+body {
+    font-family: "Bodoni Moda", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 1.5;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr min(1200px, 100%) 1fr;
+}
+
+.layout {
+    grid-column: 2;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    font-family: "Gravitas One";
+    color: #333;
+    height: 100px;
+    font-size: var(--text-hero);
+    font-weight: 400;
+    font-optical-sizing: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    font-size: var(--text-base);
+    color: darkgray;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

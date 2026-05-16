@@ -1,0 +1,8 @@
+# Ignore everything in images
+images/*
+
+# But NOT the optimized folder
+!images/optimized/
+
+# And NOT its contents
+!images/optimized/**
