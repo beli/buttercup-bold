@@ -6,3 +6,5 @@ images/*
 
 # And NOT its contents
 !images/optimized/**
+
+# Comment added to test JJ workflow
